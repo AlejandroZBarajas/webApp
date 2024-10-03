@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormHeaderComponent } from '../form-header/form-header.component';
+import { Companion } from '../../models/companion';
 
 @Component({
   selector: 'app-companion-form',
@@ -6,5 +8,19 @@ import { Component } from '@angular/core';
   styleUrl: './companion-form.component.css'
 })
 export class CompanionFormComponent {
+
+  companion: Companion;
+
+  constructor() {
+    // Inicializa el objeto Companion
+    this.companion = new Companion(1, '', '', 0, '', '', '', '', '', '', '');
+  }
+
+
+  onSubmit() {
+    // Convierte el objeto Companion a JSON y lo guarda en localStorage
+    localStorage.setItem('companion', JSON.stringify(this.companion));
+    alert('Datos guardados correctamente en localStorage');
+  }
 
 }

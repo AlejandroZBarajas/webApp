@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { CompanionFormComponent } from './users/components/companion-form/companion-form.component';
 
 @Component({
   selector: 'app-root',
