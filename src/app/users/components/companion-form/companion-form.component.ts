@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FormHeaderComponent } from '../form-header/form-header.component';
 import { Companion } from '../../models/companion';
 
 @Component({
@@ -12,12 +11,20 @@ export class CompanionFormComponent {
   companion: Companion;
 
   constructor() {
-    this.companion = new Companion(1, '', '', 0, '', '', '', '', '', '', ''); 
+    this.companion = new Companion('', '', 0, '', '', '', '', '', '', ''); 
   }
   
   
   onSubmit() {
-    this.acomp.push(this.companion)
+    this.acomp.push({
+      ...this.companion,
+      getAccompanied: function (): string {
+        throw new Error('Function not implemented.');
+      },
+      getUser: function (): string {
+        throw new Error('Function not implemented.');
+      }
+    })
     localStorage.setItem('companion', JSON.stringify(this.acomp));
     console.log("array a guardar: ",this.acomp)
   }

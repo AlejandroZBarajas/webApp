@@ -17,12 +17,14 @@ export class CompanionBoardComponent implements OnInit{
     }
   }
   
-  editCompanion(companion: Companion) {
+  editCompanion() {
     
   }
   
-  deleteCompanion(id: number) {
-
+  deleteCompanion(index:number): void {
+    this.companions.splice(index,1)
+    console.log("nuevo arrar: ",this.companions)
+    localStorage.setItem('companion',JSON.stringify(this.companions))
   }
 
 }
