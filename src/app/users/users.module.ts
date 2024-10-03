@@ -14,18 +14,26 @@ import { BodyComponent } from './components/body/body.component';
 
 @NgModule({
   declarations: [
-
-
     AccompaniedFormComponent,
     AccompaniedBoardComponent,
-
-
+    FormHeaderComponent,
+    HeaderComponent,
+    BodyComponent,
+    CompanionFormComponent,
+    CompanionBoardComponent,
   ],
   imports: [
     CommonModule,
     FormsModule
   ],
   exports: [ 
+    AccompaniedFormComponent,
+    AccompaniedBoardComponent,
+    FormHeaderComponent,
+    HeaderComponent,
+    BodyComponent,
+    CompanionFormComponent,
+    CompanionBoardComponent,
   ]
 })
 export class UsersModule { }

@@ -10,12 +10,13 @@ export class CompanionBoardComponent implements OnInit{
   companions: Companion[] = [];
 
   ngOnInit(): void {
-    const companionsData = localStorage.getItem('companions');
+    const companionsData = localStorage.getItem('companion');
+    console.log("data:",companionsData)
     if (companionsData) {
       this.companions = JSON.parse(companionsData);
     }
   }
-
+  
   editCompanion(companion: Companion) {
     
   }

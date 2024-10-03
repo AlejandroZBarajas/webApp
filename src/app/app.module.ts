@@ -13,19 +13,13 @@ import { CompanionBoardComponent } from './users/components/companion-board/comp
 
 @NgModule({
   declarations: [
-    FormHeaderComponent,
-    AppComponent,
-    HeaderComponent,
-    BodyComponent,
-    CompanionFormComponent,
-    CompanionBoardComponent,
-        
-
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    UsersModule
 
   ],
   providers: [],

@@ -8,18 +8,18 @@ import { Companion } from '../../models/companion';
   styleUrl: './companion-form.component.css'
 })
 export class CompanionFormComponent {
-
+  acomp: Companion [] = []
   companion: Companion;
 
   constructor() {
-    // Inicializa el objeto Companion
-    this.companion = new Companion(1, '', '', 0, '', '', '', '', '', '', '');
+    this.companion = new Companion(1, '', '', 0, '', '', '', '', '', '', ''); 
   }
-
-
+  
+  
   onSubmit() {
-    localStorage.setItem('companion', JSON.stringify(this.companion));
-    alert('Datos guardados correctamente en localStorage');
+    this.acomp.push(this.companion)
+    localStorage.setItem('companion', JSON.stringify(this.acomp));
+    console.log("array a guardar: ",this.acomp)
   }
 
 }
