@@ -18,7 +18,7 @@ import { BodyComponent } from './components/body/body.component';
 
     AccompaniedFormComponent,
     AccompaniedBoardComponent,
-    CompanionBoardComponent,  
+
 
   ],
   imports: [

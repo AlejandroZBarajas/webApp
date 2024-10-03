@@ -18,7 +18,6 @@ export class CompanionFormComponent {
 
 
   onSubmit() {
-    // Convierte el objeto Companion a JSON y lo guarda en localStorage
     localStorage.setItem('companion', JSON.stringify(this.companion));
     alert('Datos guardados correctamente en localStorage');
   }

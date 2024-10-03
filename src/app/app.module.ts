@@ -9,6 +9,7 @@ import { FormHeaderComponent } from './users/components/form-header/form-header.
 import { FormsModule } from '@angular/forms';
 import { UsersModule } from './users/users.module';
 import { BodyComponent } from './users/components/body/body.component';
+import { CompanionBoardComponent } from './users/components/companion-board/companion-board.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,8 @@ import { BodyComponent } from './users/components/body/body.component';
     HeaderComponent,
     BodyComponent,
     CompanionFormComponent,
+    CompanionBoardComponent,
+        
 
   ],
   imports: [
