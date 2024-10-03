@@ -26,9 +26,6 @@ import { BodyComponent } from './components/body/body.component';
     FormsModule
   ],
   exports: [ 
-
-/*     FormHeaderComponent,
-    HeaderComponent, */
   ]
 })
 export class UsersModule { }

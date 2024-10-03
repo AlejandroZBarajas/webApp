@@ -1,7 +1,6 @@
 <div id="form">
     <div id="formHeader">
-        <h1>entra form</h1>
-        <!-- <app-form-header></app-form-header> -->
+         <app-form-header [option]="'Acompañante'"></app-form-header> 
     </div>
 
     <div id="formBody">
@@ -55,6 +54,8 @@
             <label for="orientacion">Orientación sexual:</label>
             <input id="orientacion" type="text" [(ngModel)]="companion.orientacion" name="orientacion" required />
         </div>
+
+        <button type="submit">Guardar</button>
         
         </form>
     </div>

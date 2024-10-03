@@ -12,9 +12,9 @@ import { BodyComponent } from './users/components/body/body.component';
 
 @NgModule({
   declarations: [
+    FormHeaderComponent,
     AppComponent,
     HeaderComponent,
-    FormHeaderComponent,
     BodyComponent,
     CompanionFormComponent,
 

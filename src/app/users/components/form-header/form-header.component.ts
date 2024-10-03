@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , Input} from '@angular/core';
 
 @Component({
   selector: 'app-form-header',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './form-header.component.css'
 })
 export class FormHeaderComponent {
+  @Input() option: string ='';
 
 }

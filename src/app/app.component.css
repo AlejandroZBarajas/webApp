@@ -1,0 +1,9 @@
+#bodyContainer{
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: fit-content;
+    width: 100%;
+    justify-content: center;
+    border-color: red;
+    border:solid;
+}
