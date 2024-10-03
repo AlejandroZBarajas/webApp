@@ -7,6 +7,7 @@ import { AccompaniedFormComponent } from './components/accompanied-form/accompan
 import { AccompaniedBoardComponent } from './components/accompanied-board/accompanied-board.component';
 import { CompanionBoardComponent } from './components/companion-board/companion-board.component';
 import { HeaderComponent } from './components/header/header.component';
+import { FormHeaderComponent } from './components/form-header/form-header.component';
 
 
 
@@ -18,7 +19,8 @@ import { HeaderComponent } from './components/header/header.component';
     AccompaniedFormComponent,
     AccompaniedBoardComponent,
     CompanionBoardComponent,
-    HeaderComponent
+    HeaderComponent,
+    FormHeaderComponent
   ],
   imports: [
     CommonModule
