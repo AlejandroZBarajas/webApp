@@ -7,11 +7,9 @@ export class Accompanied extends User{
     edad: number,
     ciudad:  string,
     orientacion: string,
-    public CURP: string
+    public curp: string
     ){
         super (nombre, sexo, edad, ciudad, orientacion)
     }
-  /*   getAccompanied():string{
-        return`${this.getUser()}, CURP: ${this.CURP}`
-    } */
+
 }

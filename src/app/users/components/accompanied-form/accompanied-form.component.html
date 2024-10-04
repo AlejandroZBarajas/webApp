@@ -1,1 +1,44 @@
-<p>accompanied-form works!</p>
+<div id="form">
+    <div id="formHeader">
+         <app-form-header [option]="'Acompañado'"></app-form-header> 
+    </div>
+
+    <div id="formBody">
+        <form (ngSubmit)="onSubmit()">
+        <div class="inputField">
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" [(ngModel)]="currentAccompanied.nombre" name="nombre" required />
+        </div>
+
+        <div class="inputField">
+            <label for="ciudad">Ciudad:</label>
+            <input id="ciudad" type="text" [(ngModel)]="currentAccompanied.ciudad" name="ciudad" required />
+        </div>
+
+        <div class="inputField">
+            <label for="sexo">Sexo:</label>
+            <input id="sexo" type="text" [(ngModel)]="currentAccompanied.sexo" name="sexo" required />
+        </div>
+
+        <div class="inputField">
+            <label for="edad">Edad:</label>
+            <input id="edad" type="text" [(ngModel)]="currentAccompanied.edad" name="edad" required />
+        </div>
+
+        <div class="inputField">
+            <label for="curp">CURP:</label>
+            <input id="curp" type="text" [(ngModel)]="currentAccompanied.curp" name="curp" required />
+        </div>
+
+        <div class="inputField">
+            <label for="orientacion">Orientación sexual:</label>
+            <input id="orientacion" type="text" [(ngModel)]="currentAccompanied.orientacion" name="orientacion" required />
+        </div>
+
+
+        <button type="submit">Guardar</button>
+        
+        </form>
+    </div>
+
+</div>

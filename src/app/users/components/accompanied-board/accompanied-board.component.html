@@ -1,1 +1,36 @@
-<p>accompanied-board works!</p>
+<div id="accompaniedBoard">
+    <div><h2>Acompañados</h2></div>
+    <table>
+        <thead>
+
+            <th>Nombre</th>
+            <th>Sexo</th>
+            <th>Edad</th>
+            <th>CURP</th>
+            <th>Ciudad</th>
+            <th>Orientacion sexual</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let accompanied of accompanieds; let i = index">
+
+              <td>{{ accompanied.nombre }}</td>
+              <td>{{ accompanied.sexo }}</td>
+              <td>{{ accompanied.edad }}</td>
+              <td>{{accompanied.curp}}</td>
+              <td>{{ accompanied.ciudad }}</td>
+              <td>{{ accompanied.orientacion }}</td>
+              <td>
+                <button (click)="editAccompanied(i)">Editar</button>
+              </td>
+              <td>
+                <button (click)="deleteAccompanied(i)">Eliminar</button>
+              </td>
+            </tr>
+          </tbody>
+        
+    </table>
+    <app-accompanied-form [accompanied]="selectedAccompanied" (accompaniedUpdated)="onAccompaniedUpdated($event)">
+    </app-accompanied-form>
+</div>
