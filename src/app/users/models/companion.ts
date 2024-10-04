@@ -16,7 +16,13 @@ export class Companion extends User{
         ){
             super ( nombre, sexo, edad, ciudad, orientacion)
         }
-        getAccompanied():string{
-            return`${this.getUser()}, estatura: ${this.estatura}, peso: ${this.peso}, complexion: ${this.complexion}, piel: ${this.piel}, cabello: ${this.cabello} }`
+        /* 
+        getCompanion():string{
+            return`${this.getUser()}, estatura: ${this.estatura}, peso: ${this.peso}, complexion: ${this.complexion}, piel: ${this.piel}, cabello: ${this.cabello} ` 
+            return ''
         }
+        */
+        /* static createEmptyCompanion(): Companion {
+            return new Companion('', '', 0, '', '', '', '', '', '', '');
+          } */
 }

@@ -2,7 +2,6 @@ import { User } from "./user"
 
 export class Accompanied extends User{
     constructor(
-    id: number,
     nombre: string,
     sexo: string,
     edad: number,
@@ -10,9 +9,9 @@ export class Accompanied extends User{
     orientacion: string,
     public CURP: string
     ){
-        super (id, nombre, sexo, edad, ciudad, orientacion)
+        super (nombre, sexo, edad, ciudad, orientacion)
     }
-    getAccompanied():string{
+  /*   getAccompanied():string{
         return`${this.getUser()}, CURP: ${this.CURP}`
-    }
+    } */
 }

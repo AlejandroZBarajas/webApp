@@ -28,7 +28,7 @@
               <td>{{ companion.cabello }}</td>
               <td>{{ companion.orientacion }}</td>
               <td>
-                <button (click)="editCompanion()">Editar</button>
+                <button (click)="editCompanion(i)">Editar</button>
               </td>
               <td>
                 <button (click)="deleteCompanion(i)">Eliminar</button>
@@ -37,4 +37,6 @@
           </tbody>
         
     </table>
+    <app-companion-form [companion]="selectedCompanion" (companionUpdated)="onCompanionUpdated($event)">
+    </app-companion-form>
 </div>
