@@ -99,8 +99,18 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://alejandrozbarajas.github.io/webApp/",
+            "repo": "https://github.com/alejandrozbarajas/webApp.git"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

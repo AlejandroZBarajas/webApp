@@ -1,0 +1,28 @@
+#header{
+    margin: 30px;
+    width: 90%;
+    border:solid;
+    border-radius: 25px;
+    border-color:  rgba(234, 101, 45, 1);
+    display: flex;
+    justify-content: space-evenly;
+}
+#register,#option{
+    max-width: fit-content;
+}
+#option{
+    background-color: rgba(234, 101, 45, 1);
+    border-radius: 25px;
+}
+#category{
+    text-align: center;
+    color: white;
+}
+#orange{
+    text-align: center;
+    color:rgba(234, 101, 45, 1);
+    font-weight: bold;
+}
+h1,h2{
+    display: block;
+}

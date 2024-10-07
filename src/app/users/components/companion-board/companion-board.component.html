@@ -1,0 +1,42 @@
+<div id="companionBoard">
+    <div><h2>Acompañantes</h2></div>
+    <table>
+        <thead>
+
+            <th>Nombre</th>
+            <th>Sexo</th>
+            <th>Edad</th>
+            <th>Peso</th>
+            <th>EStatura</th>
+            <th>Ciudad</th>
+            <th>Color de piel</th>
+            <th>Color de cabello</th>
+            <th>Orientacion sexual</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let companion of companions; let i = index">
+
+              <td>{{ companion.nombre }}</td>
+              <td>{{ companion.sexo }}</td>
+              <td>{{ companion.edad }}</td>
+              <td>{{ companion.peso }}</td>
+              <td>{{ companion.estatura }}</td>
+              <td>{{ companion.ciudad }}</td>
+              <td>{{ companion.piel }}</td>
+              <td>{{ companion.cabello }}</td>
+              <td>{{ companion.orientacion }}</td>
+              <td>
+                <button (click)="editCompanion(i)">Editar</button>
+              </td>
+              <td>
+                <button (click)="deleteCompanion(i)">Eliminar</button>
+              </td>
+            </tr>
+          </tbody>
+        
+    </table>
+    <app-companion-form [companion]="selectedCompanion" (companionUpdated)="onCompanionUpdated($event)">
+    </app-companion-form>
+</div>
